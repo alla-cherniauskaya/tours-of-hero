@@ -1,0 +1,23 @@
+.hero-detail {
+  margin: 2em;
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+  .card {
+    margin: 0 auto;
+    max-width: 300px;
+    overflow-y: auto;
+    h2 {
+      padding: 40px 15px;
+      font-size: 2rem;
+      text-align: center;
+      word-break: break-word;
+      margin: 0;
+    }
+  }
+  .card:hover {
+      background-color: #e8eaf6;
+  }
+}

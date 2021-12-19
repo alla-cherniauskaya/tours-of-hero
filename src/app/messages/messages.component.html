@@ -1,0 +1,9 @@
+<div class="messages">
+  <h2 class="indigo-text text-accent-1">Messages</h2>
+  <div *ngIf="messageService.messages.length; else messagesEmpty">
+    <button class="clear"
+            (click)="messageService.clear()"> Clear messages </button>
+    <div class="indigo-text text-darken-4" *ngFor="let msg of messageService.messages">{{ msg }}</div>
+  </div>
+  <ng-template class="indigo-text text-darken-4" #messagesEmpty> No messages </ng-template>
+</div>
